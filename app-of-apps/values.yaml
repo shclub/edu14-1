@@ -1,0 +1,29 @@
+apps:
+  frontend:
+    enabled: true
+    project: null
+    targetRevision: null
+    namespace: null
+    autoSync: null
+ 
+  backend:
+    enabled: true
+    project: null
+    targetRevision: null
+    namespace: null    
+    autoSync: null
+
+  helm-dependency:
+    enabled: true
+    targetRevision: null
+    namespace: null    
+    project: null
+    autoSync: null   
+
+
+default:
+  app:
+    project: apps
+    targetRevision: HEAD
+    namespace: edu30
+    autoSync: false
