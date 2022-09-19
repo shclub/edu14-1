@@ -2,12 +2,12 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: app-of-apps
-  namespace: edu30
+  namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io  
       
 spec:
-  project: apps
+  project: default
 
   source:
     path: app-of-apps
@@ -20,7 +20,7 @@ spec:
 
   syncPolicy:
     automated:
-      prune: false
-      selfHeal: false
+      prune: true
+      selfHeal: true
     syncOptions:
       - CreateNamespace=false
