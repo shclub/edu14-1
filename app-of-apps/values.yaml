@@ -12,4 +12,4 @@ default:
     project: default
     targetRevision: HEAD
     namespace: edu30
-    autoSync: false
+    autoSync: true
