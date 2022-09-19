@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-of-apps
+  namespace: edu30
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io  
+      
+spec:
+  project: apps
+
+  source:
+    path: app-of-apps
+    repoURL: https://github.com/shclub/edu14-1.git
+    targetRevision: HEAD
+
+  destination:
+    namespace: edu30
+    server: "https://kubernetes.default.svc"
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=false
