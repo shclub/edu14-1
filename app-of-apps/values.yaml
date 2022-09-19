@@ -9,7 +9,7 @@ apps:
 
 default:
   app:
-    project: apps
+    project: default
     targetRevision: HEAD
     namespace: edu30
     autoSync: false
