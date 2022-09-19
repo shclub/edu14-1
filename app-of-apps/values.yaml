@@ -13,13 +13,6 @@ apps:
     namespace: null    
     autoSync: null
 
-  helm-dependency:
-    enabled: true
-    targetRevision: null
-    namespace: null    
-    project: null
-    autoSync: null   
-
 
 default:
   app:
