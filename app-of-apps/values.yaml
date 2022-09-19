@@ -5,13 +5,6 @@ apps:
     targetRevision: null
     namespace: null
     autoSync: null
- 
- # backend:
- #   enabled: true
- #   project: null
- #   targetRevision: null
- #   namespace: null    
- #   autoSync: null
 
 
 default:
